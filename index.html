@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Science Experiment Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Personalized Science Experiment Generator</h1>
+        <p>Fill in your preferences to generate a fun science experiment!</p>
+
+        <form id="experimentForm">
+            <label for="age">Your Age:</label>
+            <select id="age" name="age">
+                <option value="kid">Kid (6-10)</option>
+                <option value="teen">Teen (11-15)</option>
+                <option value="adult">Adult (16+)</option>
+            </select>
+
+            <label for="interest">What interests you the most?</label>
+            <select id="interest" name="interest">
+                <option value="chemistry">Chemistry</option>
+                <option value="physics">Physics</option>
+                <option value="biology">Biology</option>
+            </select>
+
+            <label for="materials">Materials Available:</label>
+            <input type="checkbox" id="vinegar" name="material" value="vinegar"> Vinegar<br>
+            <input type="checkbox" id="bakingSoda" name="material" value="baking soda"> Baking Soda<br>
+            <input type="checkbox" id="balloons" name="material" value="balloons"> Balloons<br>
+            <input type="checkbox" id="foodColoring" name="material" value="food coloring"> Food Coloring<br>
+            <input type="checkbox" id="magnets" name="material" value="magnets"> Magnets<br>
+
+            <button type="submit">Generate Experiment</button>
+        </form>
+
+        <div id="result">
+            <h2>Your Experiment:</h2>
+            <p id="experimentDetails"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
